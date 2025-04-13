@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463808607545",
+    "project_id": "ecoguardian-d2bb2",
+    "storage_bucket": "ecoguardian-d2bb2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463808607545:android:0c6d92e0cb906b2351a4e8",
+        "android_client_info": {
+          "package_name": "com.example.helloworld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvka2CQDVW_c3Y4hh4Ex8d2SG_tCwij_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
