@@ -39,7 +39,7 @@
     <string name="character_counter_content_description">%2$d मध्ये %1$d वर्ण प्रविष्ट गरियो</string>
     <string name="character_counter_overflowed_content_description">%2$d मध्ये %1$d वर्ण सीमा नाघ्यो</string>
     <string name="clear_text_end_icon_content_description">पाठ खाली गर्नुहोस्</string>
-    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">सक्रिय गर्नुहोस्</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">अन गर्नुहोस्</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s ले तपाईँले Google Play सेवाहरू सक्षम नगरेसम्म काम गर्दैन।</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play सेवाहरू सक्षम पार्नुहोस्</string>
     <string msgid="7153882981874058840" name="common_google_play_services_install_button">स्थापना गर्नुहोस्</string>
@@ -114,6 +114,8 @@
     <string name="mtrl_picker_toggle_to_year_selection">कुनै वर्ष चयन गर्ने विकल्प प्रयोग गर्न ट्याप गर्नुहोस्</string>
     <string name="mtrl_timepicker_cancel">रद्द गर्नुहोस्</string>
     <string name="mtrl_timepicker_confirm">ठिक छ</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"माथि नेभिगेट गर्नुहोस्"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"नेभिगेसन ड्रअर खोल्नुहोस्"</string>
     <string name="password_toggle_content_description">पासवर्ड देखाउनुहोस्</string>
     <string msgid="6264217191555673260" name="search_menu_title">"खोज"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"९९९+"</string>

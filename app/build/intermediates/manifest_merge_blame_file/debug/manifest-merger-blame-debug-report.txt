@@ -14,284 +14,333 @@
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:7:5-79
 12-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:7:22-76
-13    <uses-permission android:name="android.permission.WAKE_LOCK" />
-13-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:24:5-68
-13-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:24:22-65
-14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-14-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:25:5-79
-14-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:25:22-76
-15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-15-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:26:5-110
-15-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:26:22-107
-16
-17    <permission
-17-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-18        android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-18-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-19        android:protectionLevel="signature" />
-19-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
-20
-21    <uses-permission android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-21-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-21-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-22
-23    <application
-23-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:9:5-41:19
-24        android:allowBackup="true"
-24-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:10:9-35
-25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-26        android:dataExtractionRules="@xml/data_extraction_rules"
-26-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:11:9-65
-27        android:debuggable="true"
-28        android:extractNativeLibs="false"
-29        android:fullBackupContent="@xml/backup_rules"
-29-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:12:9-54
-30        android:icon="@mipmap/ic_launcher"
-30-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:13:9-43
-31        android:label="Hello World"
-31-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:14:9-36
-32        android:roundIcon="@mipmap/ic_launcher_round"
-32-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:15:9-54
-33        android:supportsRtl="true"
-33-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:16:9-35
-34        android:testOnly="true"
-35        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-35-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:17:9-67
-36        android:usesCleartextTraffic="true" >
-36-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:18:9-44
-37        <activity
-37-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:21:9-28:20
-38            android:name="com.example.helloworld.LoginActivity"
-38-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:22:13-42
-39            android:exported="true" >
-39-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:23:13-36
-40            <intent-filter>
-40-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:24:13-27:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:25:17-69
-41-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:25:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:26:17-77
-43-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:26:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity
-46-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:30:9-32:40
-47            android:name="com.example.helloworld.RegisterActivity"
-47-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:31:13-45
-48            android:exported="false" />
-48-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:32:13-37
-49        <activity
-49-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:34:9-36:40
-50            android:name="com.example.helloworld.MainActivity"
-50-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:35:13-41
-51            android:exported="false" />
-51-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:36:13-37
-52        <activity
-52-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:38:9-40:40
-53            android:name="com.example.helloworld.DebugFirebaseActivity"
-53-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:39:13-50
-54            android:exported="false" />
-54-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:40:13-37
-55
-56        <service
-56-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:8:9-14:19
-57            android:name="com.google.firebase.components.ComponentDiscoveryService"
-57-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:9:13-84
-58            android:directBootAware="true"
-58-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:34:13-43
-59            android:exported="false" >
-59-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:10:13-37
-60            <meta-data
-60-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:11:13-13:85
-61                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-61-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:12:17-126
-62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:13:17-82
-63            <meta-data
-63-->[com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:11:13-13:85
-64                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
-64-->[com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:12:17-116
-65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:13:17-82
-66            <meta-data
-66-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:14:13-16:85
-67                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-67-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:15:17-113
-68                android:value="com.google.firebase.components.ComponentRegistrar" />
-68-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:16:17-82
-69            <meta-data
-69-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:69:13-71:85
-70                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-70-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:70:17-109
-71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:71:17-82
-72            <meta-data
-72-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:31:13-33:85
-73                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-73-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:32:17-139
-74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:33:17-82
-75            <meta-data
-75-->[com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:17:13-19:85
-76                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-76-->[com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:18:17-127
-77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:19:17-82
-78        </service>
-79
-80        <activity
-80-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:29:9-46:20
-81            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-81-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:30:13-80
-82            android:excludeFromRecents="true"
-82-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:31:13-46
-83            android:exported="true"
-83-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:32:13-36
-84            android:launchMode="singleTask"
-84-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:33:13-44
-85            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-85-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:34:13-72
-86            <intent-filter>
-86-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:35:13-45:29
-87                <action android:name="android.intent.action.VIEW" />
-87-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:17-69
-87-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:25-66
-88
-89                <category android:name="android.intent.category.DEFAULT" />
-89-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:17-76
-89-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:27-73
-90                <category android:name="android.intent.category.BROWSABLE" />
-90-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:17-78
-90-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:27-75
-91
-92                <data
-92-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:41:17-44:51
-93                    android:host="firebase.auth"
-93-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:42:21-49
-94                    android:path="/"
-94-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:43:21-37
-95                    android:scheme="genericidp" />
-95-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:44:21-48
-96            </intent-filter>
-97        </activity>
-98        <activity
-98-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:47:9-64:20
-99            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-99-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:48:13-79
-100            android:excludeFromRecents="true"
-100-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:49:13-46
-101            android:exported="true"
-101-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:50:13-36
-102            android:launchMode="singleTask"
-102-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:51:13-44
-103            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-103-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:52:13-72
-104            <intent-filter>
-104-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:53:13-63:29
-105                <action android:name="android.intent.action.VIEW" />
-105-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:17-69
-105-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:25-66
-106
-107                <category android:name="android.intent.category.DEFAULT" />
-107-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:17-76
-107-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:27-73
-108                <category android:name="android.intent.category.BROWSABLE" />
-108-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:17-78
-108-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:27-75
-109
-110                <data
-110-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:41:17-44:51
-111                    android:host="firebase.auth"
-111-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:42:21-49
-112                    android:path="/"
-112-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:43:21-37
-113                    android:scheme="recaptcha" />
-113-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:44:21-48
-114            </intent-filter>
-115        </activity>
-116
-117        <provider
-117-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
-118            android:name="com.google.firebase.provider.FirebaseInitProvider"
-118-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:26:13-77
-119            android:authorities="com.example.helloworld.firebaseinitprovider"
-119-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:27:13-72
-120            android:directBootAware="true"
-120-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:28:13-43
-121            android:exported="false"
-121-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:29:13-37
-122            android:initOrder="100" />
-122-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:30:13-36
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:8:5-79
+13-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:9:5-81
+14-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:9:22-78
+15
+16    <uses-feature
+16-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+17        android:glEsVersion="0x00020000"
+17-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+18        android:required="true" />
+18-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+19
+20    <queries>
+20-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:30:5-34:15
+21
+22        <!-- Needs to be explicitly declared on Android R+ -->
+23        <package android:name="com.google.android.apps.maps" />
+23-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+24    </queries>
+25
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:24:5-68
+26-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:24:22-65
+27    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+27-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:25:5-79
+27-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:25:22-76
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+28-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:26:22-107
+29
+30    <permission
+30-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+31        android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+35
+36    <application
+36-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:11:5-47:19
+37        android:allowBackup="true"
+37-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:12:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+39        android:dataExtractionRules="@xml/data_extraction_rules"
+39-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:13:9-65
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:fullBackupContent="@xml/backup_rules"
+42-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:14:9-54
+43        android:icon="@mipmap/ic_launcher"
+43-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:15:9-43
+44        android:label="Hello World"
+44-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:16:9-36
+45        android:roundIcon="@mipmap/ic_launcher_round"
+45-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:17:9-54
+46        android:supportsRtl="true"
+46-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:18:9-35
+47        android:testOnly="true"
+48        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+48-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:19:9-67
+49        android:usesCleartextTraffic="true" >
+49-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:20:9-44
+50        <meta-data
+50-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:23:9-25:71
+51            android:name="com.google.android.geo.API_KEY"
+51-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:24:13-58
+52            android:value="AIzaSyBO84vf8E0z-iBXzAxQo2m1Ha8LmbYtvto" />
+52-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:25:13-68
+53
+54        <activity
+54-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:27:9-34:20
+55            android:name="com.example.helloworld.LoginActivity"
+55-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:28:13-42
+56            android:exported="true" >
+56-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:29:13-36
+57            <intent-filter>
+57-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:30:13-33:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:31:17-69
+58-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:31:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:32:17-77
+60-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:32:27-74
+61            </intent-filter>
+62        </activity>
+63        <activity
+63-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:36:9-38:40
+64            android:name="com.example.helloworld.RegisterActivity"
+64-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:37:13-45
+65            android:exported="false" />
+65-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:38:13-37
+66        <activity
+66-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:40:9-42:40
+67            android:name="com.example.helloworld.MainActivity"
+67-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:41:13-41
+68            android:exported="false" />
+68-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:42:13-37
+69        <activity
+69-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:44:9-46:40
+70            android:name="com.example.helloworld.DebugFirebaseActivity"
+70-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:45:13-50
+71            android:exported="false" />
+71-->/Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:46:13-37
+72
+73        <service
+73-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:8:9-14:19
+74            android:name="com.google.firebase.components.ComponentDiscoveryService"
+74-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:9:13-84
+75            android:directBootAware="true"
+75-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:34:13-43
+76            android:exported="false" >
+76-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:10:13-37
+77            <meta-data
+77-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:11:13-13:85
+78                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+78-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:12:17-126
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:13:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:11:13-13:85
+81                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+81-->[com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:12:17-116
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:13:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:14:13-16:85
+84                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+84-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:15:17-113
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:16:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:69:13-71:85
+87                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+87-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:70:17-109
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:71:17-82
+89            <meta-data
+89-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:31:13-33:85
+90                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+90-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:32:17-139
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:33:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:17:13-19:85
+93                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+93-->[com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:18:17-127
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:19:17-82
+95        </service>
+96
+97        <activity
+97-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:29:9-46:20
+98            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+98-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:30:13-80
+99            android:excludeFromRecents="true"
+99-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:31:13-46
+100            android:exported="true"
+100-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:32:13-36
+101            android:launchMode="singleTask"
+101-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:33:13-44
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+102-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:34:13-72
+103            <intent-filter>
+103-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:35:13-45:29
+104                <action android:name="android.intent.action.VIEW" />
+104-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:17-69
+104-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:25-66
+105
+106                <category android:name="android.intent.category.DEFAULT" />
+106-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:17-76
+106-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:27-73
+107                <category android:name="android.intent.category.BROWSABLE" />
+107-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:17-78
+107-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:27-75
+108
+109                <data
+109-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:41:17-44:51
+110                    android:host="firebase.auth"
+110-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:42:21-49
+111                    android:path="/"
+111-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:43:21-37
+112                    android:scheme="genericidp" />
+112-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:44:21-48
+113            </intent-filter>
+114        </activity>
+115        <activity
+115-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:47:9-64:20
+116            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+116-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:48:13-79
+117            android:excludeFromRecents="true"
+117-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:49:13-46
+118            android:exported="true"
+118-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:50:13-36
+119            android:launchMode="singleTask"
+119-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:51:13-44
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+120-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:52:13-72
+121            <intent-filter>
+121-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:53:13-63:29
+122                <action android:name="android.intent.action.VIEW" />
+122-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:17-69
+122-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:36:25-66
 123
-124        <receiver
-124-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:29:9-33:20
-125            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-125-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:30:13-85
-126            android:enabled="true"
-126-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:31:13-35
-127            android:exported="false" >
-127-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:32:13-37
-128        </receiver>
-129
-130        <service
-130-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:35:9-38:40
-131            android:name="com.google.android.gms.measurement.AppMeasurementService"
-131-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:36:13-84
-132            android:enabled="true"
-132-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:37:13-35
-133            android:exported="false" />
-133-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:38:13-37
-134        <service
-134-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:39:9-43:72
-135            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-135-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:40:13-87
-136            android:enabled="true"
-136-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:41:13-35
-137            android:exported="false"
-137-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:42:13-37
-138            android:permission="android.permission.BIND_JOB_SERVICE" />
-138-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:43:13-69
-139
-140        <activity
-140-->[com.google.android.gms:play-services-base:18.0.1] /Users/kesselbach/.gradle/caches/8.9/transforms/53ce2ec8b732022ebfafeb744d26888f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-141            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-141-->[com.google.android.gms:play-services-base:18.0.1] /Users/kesselbach/.gradle/caches/8.9/transforms/53ce2ec8b732022ebfafeb744d26888f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-142            android:exported="false"
-142-->[com.google.android.gms:play-services-base:18.0.1] /Users/kesselbach/.gradle/caches/8.9/transforms/53ce2ec8b732022ebfafeb744d26888f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-143-->[com.google.android.gms:play-services-base:18.0.1] /Users/kesselbach/.gradle/caches/8.9/transforms/53ce2ec8b732022ebfafeb744d26888f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-144
-145        <meta-data
-145-->[com.google.android.gms:play-services-basement:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/5831ac32ec1b0cb9c49c6b5bf0f20037/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-146            android:name="com.google.android.gms.version"
-146-->[com.google.android.gms:play-services-basement:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/5831ac32ec1b0cb9c49c6b5bf0f20037/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-147            android:value="@integer/google_play_services_version" />
-147-->[com.google.android.gms:play-services-basement:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/5831ac32ec1b0cb9c49c6b5bf0f20037/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+124                <category android:name="android.intent.category.DEFAULT" />
+124-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:17-76
+124-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:38:27-73
+125                <category android:name="android.intent.category.BROWSABLE" />
+125-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:17-78
+125-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:39:27-75
+126
+127                <data
+127-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:41:17-44:51
+128                    android:host="firebase.auth"
+128-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:42:21-49
+129                    android:path="/"
+129-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:43:21-37
+130                    android:scheme="recaptcha" />
+130-->[com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:44:21-48
+131            </intent-filter>
+132        </activity> <!-- Needs to be explicitly declared on P+ -->
+133        <uses-library
+133-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+134            android:name="org.apache.http.legacy"
+134-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+135            android:required="false" />
+135-->[com.google.android.gms:play-services-maps:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/4d3d3d58ada897fe93c41ee035543ed5/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+136
+137        <activity
+137-->[com.google.android.gms:play-services-base:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f2a8029adeb8e47807d5439c876198c3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+138            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+138-->[com.google.android.gms:play-services-base:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f2a8029adeb8e47807d5439c876198c3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+139            android:exported="false"
+139-->[com.google.android.gms:play-services-base:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f2a8029adeb8e47807d5439c876198c3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+140-->[com.google.android.gms:play-services-base:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f2a8029adeb8e47807d5439c876198c3/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+141
+142        <provider
+142-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
+143            android:name="com.google.firebase.provider.FirebaseInitProvider"
+143-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:26:13-77
+144            android:authorities="com.example.helloworld.firebaseinitprovider"
+144-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:27:13-72
+145            android:directBootAware="true"
+145-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:28:13-43
+146            android:exported="false"
+146-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:29:13-37
+147            android:initOrder="100" />
+147-->[com.google.firebase:firebase-common:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/7a6d2059a95b1bbfd9e87e5a20ebf514/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:30:13-36
 148
-149        <provider
-149-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-150            android:name="androidx.startup.InitializationProvider"
-150-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-151            android:authorities="com.example.helloworld.androidx-startup"
-151-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+149        <receiver
+149-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:29:9-33:20
+150            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+150-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:30:13-85
+151            android:enabled="true"
+151-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:31:13-35
 152            android:exported="false" >
-152-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-153            <meta-data
-153-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-154                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-154-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-155                android:value="androidx.startup" />
-155-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-156            <meta-data
-156-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/kesselbach/.gradle/caches/8.9/transforms/f3953b2d1b7bc7a96e8c7737e48c81a4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-157                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-157-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/kesselbach/.gradle/caches/8.9/transforms/f3953b2d1b7bc7a96e8c7737e48c81a4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-158                android:value="androidx.startup" />
-158-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/kesselbach/.gradle/caches/8.9/transforms/f3953b2d1b7bc7a96e8c7737e48c81a4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-159        </provider>
-160    </application>
-161
-162</manifest>
+152-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:32:13-37
+153        </receiver>
+154
+155        <service
+155-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:35:9-38:40
+156            android:name="com.google.android.gms.measurement.AppMeasurementService"
+156-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:36:13-84
+157            android:enabled="true"
+157-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:37:13-35
+158            android:exported="false" />
+158-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:38:13-37
+159        <service
+159-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:39:9-43:72
+160            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+160-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:40:13-87
+161            android:enabled="true"
+161-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:41:13-35
+162            android:exported="false"
+162-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:42:13-37
+163            android:permission="android.permission.BIND_JOB_SERVICE" />
+163-->[com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:43:13-69
+164
+165        <meta-data
+165-->[com.google.android.gms:play-services-basement:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/5831ac32ec1b0cb9c49c6b5bf0f20037/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+166            android:name="com.google.android.gms.version"
+166-->[com.google.android.gms:play-services-basement:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/5831ac32ec1b0cb9c49c6b5bf0f20037/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+167            android:value="@integer/google_play_services_version" />
+167-->[com.google.android.gms:play-services-basement:18.1.0] /Users/kesselbach/.gradle/caches/8.9/transforms/5831ac32ec1b0cb9c49c6b5bf0f20037/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+168
+169        <uses-library
+169-->[androidx.window:window:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/878263a3b85f3222f98b97a522c54c18/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+170            android:name="androidx.window.extensions"
+170-->[androidx.window:window:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/878263a3b85f3222f98b97a522c54c18/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+171            android:required="false" />
+171-->[androidx.window:window:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/878263a3b85f3222f98b97a522c54c18/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+172        <uses-library
+172-->[androidx.window:window:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/878263a3b85f3222f98b97a522c54c18/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+173            android:name="androidx.window.sidecar"
+173-->[androidx.window:window:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/878263a3b85f3222f98b97a522c54c18/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+174            android:required="false" />
+174-->[androidx.window:window:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/878263a3b85f3222f98b97a522c54c18/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+175
+176        <provider
+176-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+177            android:name="androidx.startup.InitializationProvider"
+177-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+178            android:authorities="com.example.helloworld.androidx-startup"
+178-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+179            android:exported="false" >
+179-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+180            <meta-data
+180-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+181                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+181-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+182                android:value="androidx.startup" />
+182-->[androidx.emoji2:emoji2:1.2.0] /Users/kesselbach/.gradle/caches/8.9/transforms/6fdecfe55ddde7b8d5626d3a527a0a0b/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+183            <meta-data
+183-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/kesselbach/.gradle/caches/8.9/transforms/f3953b2d1b7bc7a96e8c7737e48c81a4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+184                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+184-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/kesselbach/.gradle/caches/8.9/transforms/f3953b2d1b7bc7a96e8c7737e48c81a4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+185                android:value="androidx.startup" />
+185-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/kesselbach/.gradle/caches/8.9/transforms/f3953b2d1b7bc7a96e8c7737e48c81a4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+186        </provider>
+187    </application>
+188
+189</manifest>

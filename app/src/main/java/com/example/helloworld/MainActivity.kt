@@ -2,17 +2,15 @@ package com.example.helloworld
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import android.content.Intent
 import android.widget.Toast
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    private lateinit var welcomeTextView: TextView
-    private lateinit var logoutButton: Button
+    private lateinit var bottomNavigationView: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,25 +20,44 @@ class MainActivity : AppCompatActivity() {
         FirebaseApp.initializeApp(this)
         auth = FirebaseAuth.getInstance()
 
-        // Initialize views
-        welcomeTextView = findViewById(R.id.welcomeTextView)
-        logoutButton = findViewById(R.id.logoutButton)
-
-        // Set welcome message with user email
+        // Check if user is logged in
         val currentUser = auth.currentUser
-        if (currentUser != null) {
-            welcomeTextView.text = "Welcome, ${currentUser.email}!"
-        } else {
-            // If no user is logged in, redirect to login
+        if (currentUser == null) {
             startLoginActivity()
             return
         }
 
-        // Set up logout button
-        logoutButton.setOnClickListener {
-            auth.signOut()
-            Toast.makeText(this, "Logged out successfully", Toast.LENGTH_SHORT).show()
-            startLoginActivity()
+        // Initialize bottom navigation
+        bottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, HomeFragment())
+                        .commit()
+                    true
+                }
+                R.id.navigation_map -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, MapFragment())
+                        .commit()
+                    true
+                }
+                R.id.navigation_logout -> {
+                    auth.signOut()
+                    Toast.makeText(this, "Logged out successfully", Toast.LENGTH_SHORT).show()
+                    startLoginActivity()
+                    true
+                }
+                else -> false
+            }
+        }
+
+        // Set default fragment
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HomeFragment())
+                .commit()
         }
     }
 

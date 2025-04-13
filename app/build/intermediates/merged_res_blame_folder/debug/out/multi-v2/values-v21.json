@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.helloworld.app-mergeDebugResources-31:/values-v21/values-v21.xml",
+            "outputFile": "com.example.helloworld.app-mergeDebugResources-48:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/res/values-v21/values-v21.xml",
