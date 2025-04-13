@@ -13,6 +13,8 @@ import android.widget.TextView
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.content.Context
+import android.util.Log
+import com.google.firebase.FirebaseApp
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -24,6 +26,10 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Initialize Firebase
+        FirebaseApp.initializeApp(this)
+        
         setContentView(R.layout.activity_register)
 
         // Initialize Firebase Auth
@@ -48,15 +54,50 @@ class RegisterActivity : AppCompatActivity() {
             val password = passwordEditText.text.toString()
             val confirmPassword = confirmPasswordEditText.text.toString()
 
-            if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
-                if (password == confirmPassword) {
-                    registerUser(email, password)
-                } else {
-                    Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
-                }
-            } else {
-                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+            if (email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+                Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
             }
+
+            if (password != confirmPassword) {
+                Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (password.length < 6) {
+                Toast.makeText(this, "Password must be at least 6 characters", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            registerButton.isEnabled = false
+            auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    registerButton.isEnabled = true
+                    if (task.isSuccessful) {
+                        // Sign out the user after registration
+                        auth.signOut()
+                        
+                        Toast.makeText(this, "Registration successful! Please login with your credentials.", 
+                            Toast.LENGTH_LONG).show()
+                        
+                        // Redirect to login activity
+                        val intent = Intent(this, LoginActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        val errorMessage = when {
+                            task.exception?.message?.contains("network") == true -> 
+                                "Network error. Please check your internet connection and try again."
+                            task.exception?.message?.contains("email") == true -> 
+                                "This email is already in use or invalid."
+                            task.exception?.message?.contains("password") == true -> 
+                                "Password is too weak. Use at least 6 characters."
+                            else -> "Registration failed: ${task.exception?.message}"
+                        }
+                        Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show()
+                    }
+                }
         }
 
         loginTextView.setOnClickListener {
@@ -64,35 +105,12 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun registerUser(email: String, password: String) {
-        registerButton.isEnabled = false
-        auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                registerButton.isEnabled = true
-                if (task.isSuccessful) {
-                    // Registration success, navigate to main activity
-                    startActivity(Intent(this, MainActivity::class.java))
-                    finish()
-                } else {
-                    // If registration fails, display a message to the user.
-                    val errorMessage = when {
-                        task.exception?.message?.contains("network") == true -> 
-                            "Network error. Please check your internet connection and try again."
-                        task.exception?.message?.contains("email") == true -> 
-                            "Invalid email format or email already in use."
-                        task.exception?.message?.contains("password") == true -> 
-                            "Password should be at least 6 characters long."
-                        else -> "Registration failed: ${task.exception?.message}"
-                    }
-                    Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show()
-                }
-            }
-    }
-
     private fun isNetworkAvailable(): Boolean {
         val connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val network = connectivityManager.activeNetwork ?: return false
         val capabilities = connectivityManager.getNetworkCapabilities(network) ?: return false
-        return capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+        
+        return capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) &&
+               capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_VALIDATED)
     }
-} 
+}

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:1-42:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:2:1-20:12
@@ -72,16 +72,55 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kesselbach/.gradle
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ea7242e462b3b4781ae09a26e81fd469/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/31cfc6e22245489c903ab85867f12db3/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 	package
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:4:5-37
 		INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:4:5-26:19
-INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:4:5-26:19
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:9:5-41:19
+INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:9:5-41:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/9ae0995b778fbe4461660b4c52674325/transformed/jetified-firebase-analytics-ktx-21.2.2/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/bec5d3cc06c19bdc02d530470e8c2b83/transformed/jetified-firebase-auth-ktx-22.0.0/AndroidManifest.xml:7:5-15:19
@@ -143,41 +182,59 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kesselbach/.gradle/c
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /Users/kesselbach/.gradle/caches/8.9/transforms/f727a2041654df20f1f64b41d44068a9/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:6:9-36
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:14:9-36
+	android:fullBackupContent
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:12:9-54
+	android:roundIcon
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:15:9-54
+	tools:targetApi
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:19:9-29
+	android:icon
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:5:9-35
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:8:9-67
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:17:9-67
+	android:dataExtractionRules
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:11:9-65
+	android:usesCleartextTraffic
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:18:9-44
 activity#com.example.helloworld.LoginActivity
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:10:9-17:20
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:21:9-28:20
 	android:exported
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:12:13-36
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:11:13-42
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:22:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:13:13-16:29
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:15:17-77
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:15:27-74
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:26:27-74
 activity#com.example.helloworld.RegisterActivity
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:19:9-21:40
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:21:13-37
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:20:13-45
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:31:13-45
 activity#com.example.helloworld.MainActivity
-ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:23:9-25:40
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:34:9-36:40
 	android:exported
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:25:13-37
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:24:13-41
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:35:13-41
+activity#com.example.helloworld.DebugFirebaseActivity
+ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:38:9-40:40
+	android:exported
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:40:13-37
+	android:name
+		ADDED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml:39:13-50
 uses-sdk
 INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/kesselbach/ecoguardian/app/src/main/AndroidManifest.xml
@@ -362,38 +419,6 @@ ADDED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.g
 		ADDED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/kesselbach/.gradle/caches/8.9/transforms/2f664a9bd541ff393d63da30c98cf133/transformed/jetified-firebase-common-ktx-20.3.2/AndroidManifest.xml:15:17-113
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:10:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:10:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:25:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/kesselbach/.gradle/caches/8.9/transforms/b87f630e77d7ec6e544f5e90d76c8090/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/1359c4f52cc4528a99fa13909d014f14/transformed/jetified-play-services-measurement-api-21.2.2/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/kesselbach/.gradle/caches/8.9/transforms/f93e1ee3b545c95426053099ce59dfdb/transformed/jetified-firebase-installations-17.1.3/AndroidManifest.xml:9:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/e31af35719b29862aacb01eba62b7fce/transformed/jetified-play-services-measurement-21.2.2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/87f609c6256b8b099b4a5f54cc44eae1/transformed/jetified-play-services-measurement-impl-21.2.2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/kesselbach/.gradle/caches/8.9/transforms/bead1d300b22fedcb81af9dc3d15b13a/transformed/jetified-play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:26:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:22.0.0] /Users/kesselbach/.gradle/caches/8.9/transforms/ec9e3cd19367d0fbd07ce8a5a0715bdf/transformed/jetified-firebase-auth-22.0.0/AndroidManifest.xml:29:9-46:20
 	android:excludeFromRecents

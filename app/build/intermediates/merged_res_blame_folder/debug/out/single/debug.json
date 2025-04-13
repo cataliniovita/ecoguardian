@@ -1,26 +1,46 @@
 [
     {
-        "merged": "com.example.helloworld.app-merged_res-33:/layout_activity_login.xml.flat",
-        "source": "com.example.helloworld.app-main-35:/layout/activity_login.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "com.example.helloworld.app-merged_res-33:/layout_activity_main.xml.flat",
         "source": "com.example.helloworld.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.helloworld.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.helloworld.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/layout_activity_register.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/layout/activity_register.xml"
     },
     {
-        "merged": "com.example.helloworld.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.helloworld.app-main-35:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.helloworld.app-merged_res-33:/layout_activity_register.xml.flat",
-        "source": "com.example.helloworld.app-main-35:/layout/activity_register.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.helloworld.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.helloworld.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/layout_activity_login.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/layout_activity_debug_firebase.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/layout/activity_debug_firebase.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/xml_backup_rules.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-merged_res-33:/xml_network_security_config.xml.flat",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-35:/xml/network_security_config.xml"
     }
 ]
