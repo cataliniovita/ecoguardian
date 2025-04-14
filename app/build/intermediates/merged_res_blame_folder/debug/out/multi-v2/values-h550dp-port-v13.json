@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.helloworld.app-mergeDebugResources-48:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.helloworld.app-mergeDebugResources-35:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/a7be04c51919ce9ca757261a138ab30f/transformed/material-1.8.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/73862be7024978cabae68cd1cb01660f/transformed/material-1.11.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "76",
-                        "endOffsets": "127"
+                        "endColumns": "64",
+                        "endOffsets": "115"
                     }
                 }
             ]

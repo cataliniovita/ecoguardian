@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_home.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_debug_firebase.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_debug_firebase.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_report.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/fragment_report.xml"
+    },
+    {
+        "merged": "com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_report.xml",
+        "source": "com.example.helloworld.app-main-39:/layout/fragment_report.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_map.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/fragment_map.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_login.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_register.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_register.xml"
+    }
+]

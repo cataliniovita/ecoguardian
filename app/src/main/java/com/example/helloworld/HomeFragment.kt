@@ -9,27 +9,32 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 
 class HomeFragment : Fragment() {
-    private lateinit var welcomeTextView: TextView
+
     private lateinit var auth: FirebaseAuth
+    private lateinit var welcomeTextView: TextView
+    private lateinit var userEmailTextView: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        
-        welcomeTextView = view.findViewById(R.id.welcomeTextView)
+        // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance()
-        
-        // Set welcome message with user email
+
+        // Initialize views
+        welcomeTextView = view.findViewById(R.id.welcomeTextView)
+        userEmailTextView = view.findViewById(R.id.userEmailTextView)
+
+        // Set user information
         val currentUser = auth.currentUser
         if (currentUser != null) {
-            welcomeTextView.text = "Welcome, ${currentUser.email}!"
+            userEmailTextView.text = currentUser.email
         }
+
+        return view
     }
 } 

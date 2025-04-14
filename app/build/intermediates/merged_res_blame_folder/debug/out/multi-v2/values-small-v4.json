@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.helloworld.app-mergeDebugResources-48:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.helloworld.app-mergeDebugResources-35:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/a7be04c51919ce9ca757261a138ab30f/transformed/material-1.8.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/73862be7024978cabae68cd1cb01660f/transformed/material-1.11.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.helloworld.app-mergeDebugResources-48:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.helloworld.app-mergeDebugResources-35:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/a7be04c51919ce9ca757261a138ab30f/transformed/material-1.8.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/73862be7024978cabae68cd1cb01660f/transformed/material-1.11.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
     private lateinit var loginButton: Button
-    private lateinit var registerButton: Button
+    private lateinit var registerTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
         emailEditText = findViewById(R.id.emailEditText)
         passwordEditText = findViewById(R.id.passwordEditText)
         loginButton = findViewById(R.id.loginButton)
-        registerButton = findViewById(R.id.registerButton)
+        registerTextView = findViewById(R.id.registerTextView)
 
         // Check if user is already signed in
         val currentUser = auth.currentUser
@@ -81,7 +81,7 @@ class LoginActivity : AppCompatActivity() {
                 }
         }
 
-        registerButton.setOnClickListener {
+        registerTextView.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
