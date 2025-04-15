@@ -3075,6 +3075,7 @@ int drawable design_password_eye 0x7f070097
 int drawable design_snackbar_background 0x7f070098
 int drawable googleg_disabled_color_18 0x7f070099
 int drawable googleg_standard_color_18 0x7f07009a
+int drawable ic_admin 0x7f0700fd
 int drawable ic_arrow_back_black_24 0x7f07009b
 int drawable ic_call_answer 0x7f07009c
 int drawable ic_call_answer_low 0x7f07009d
@@ -3244,9 +3245,9 @@ int id action_text 0x7f080043
 int id actions 0x7f080044
 int id activity_chooser_view_content 0x7f080045
 int id add 0x7f080046
-int id addPhotoButton 0x7f080047
 int id adjust_height 0x7f080048
 int id adjust_width 0x7f080049
+int id adminTitle 0x7f080224
 int id alertTitle 0x7f08004a
 int id aligned 0x7f08004b
 int id all 0x7f08004c
@@ -3271,7 +3272,7 @@ int id beginning 0x7f08005e
 int id bestChoice 0x7f08005f
 int id blocking 0x7f080060
 int id bottom 0x7f080061
-int id bottomNavigationView 0x7f080062
+int id bottom_navigation 0x7f080238
 int id bounce 0x7f080063
 int id bounceBoth 0x7f080064
 int id bounceEnd 0x7f080065
@@ -3325,6 +3326,7 @@ int id custom 0x7f080094
 int id customPanel 0x7f080095
 int id cut 0x7f080096
 int id dark 0x7f080097
+int id dateText 0x7f08023b
 int id date_picker_actions 0x7f080098
 int id debugTextView 0x7f080099
 int id decelerate 0x7f08009a
@@ -3333,7 +3335,8 @@ int id decor_content_parent 0x7f08009c
 int id default_activity_button 0x7f08009d
 int id deltaRelative 0x7f08009e
 int id dependency_ordering 0x7f08009f
-int id descriptionEditText 0x7f0800a0
+int id descriptionInput 0x7f08023e
+int id descriptionText 0x7f08023c
 int id design_bottom_sheet 0x7f0800a1
 int id design_menu_item_action_area 0x7f0800a2
 int id design_menu_item_action_area_stub 0x7f0800a3
@@ -3367,6 +3370,7 @@ int id elastic 0x7f0800be
 int id emailEditText 0x7f0800bf
 int id emailLayout 0x7f0800c0
 int id embed 0x7f0800c1
+int id emptyStateText 0x7f080236
 int id end 0x7f0800c2
 int id endToStart 0x7f0800c3
 int id enterAlways 0x7f0800c4
@@ -3389,12 +3393,13 @@ int id fixed 0x7f0800d4
 int id flip 0x7f0800d5
 int id floating 0x7f0800d6
 int id forever 0x7f0800d7
-int id fragmentContainer 0x7f0800d8
+int id fragment_container 0x7f080239
 int id fragment_container_view_tag 0x7f0800d9
 int id frost 0x7f0800da
 int id fullscreen_header 0x7f0800db
 int id ghost_view 0x7f0800dc
 int id ghost_view_holder 0x7f0800dd
+int id glide_custom_view_target_tag 0x7f08023a
 int id gone 0x7f0800de
 int id graph 0x7f0800df
 int id graph_wrap 0x7f0800e0
@@ -3417,7 +3422,6 @@ int id ignore 0x7f0800f0
 int id ignoreRequest 0x7f0800f1
 int id image 0x7f0800f2
 int id imageContainer 0x7f0800f3
-int id imagePreview 0x7f0800f4
 int id immediateStop 0x7f0800f5
 int id included 0x7f0800f6
 int id indeterminate 0x7f0800f7
@@ -3440,12 +3444,15 @@ int id linear 0x7f080107
 int id listMode 0x7f080108
 int id list_item 0x7f080109
 int id locationCard 0x7f08010a
-int id locationInput 0x7f08010b
+int id locationText 0x7f08023d
 int id locationTextView 0x7f08010c
 int id loginButton 0x7f08010d
 int id loginTextView 0x7f08010e
 int id logoImageView 0x7f08010f
 int id m3_side_sheet 0x7f080110
+int id manageReportsButton 0x7f080228
+int id manageSettingsButton 0x7f080229
+int id manageUsersButton 0x7f08022a
 int id map 0x7f080111
 int id marquee 0x7f080112
 int id masked 0x7f080113
@@ -3506,6 +3513,7 @@ int id mtrl_picker_text_input_range_start 0x7f080149
 int id mtrl_picker_title_text 0x7f08014a
 int id mtrl_view_tag_bottom_padding 0x7f08014b
 int id multiply 0x7f08014c
+int id navigation_admin 0x7f08022b
 int id navigation_bar_item_active_indicator_view 0x7f08014d
 int id navigation_bar_item_icon_container 0x7f08014e
 int id navigation_bar_item_icon_view 0x7f08014f
@@ -3573,7 +3581,10 @@ int id rectangles 0x7f08018c
 int id refreshButton 0x7f08018d
 int id registerButton 0x7f08018e
 int id registerTextView 0x7f08018f
+int id rejectButton 0x7f08022c
+int id reportImage 0x7f08022f
 int id report_drawn 0x7f080190
+int id reportsRecyclerView 0x7f080237
 int id reverseSawtooth 0x7f080191
 int id right 0x7f080192
 int id rightToLeft 0x7f080193
@@ -3602,8 +3613,10 @@ int id search_mag_icon 0x7f0801a9
 int id search_plate 0x7f0801aa
 int id search_src_text 0x7f0801ab
 int id search_voice_btn 0x7f0801ac
+int id selectImageButton 0x7f08023f
 int id select_dialog_listview 0x7f0801ad
 int id selected 0x7f0801ae
+int id selectedImage 0x7f080240
 int id selection_type 0x7f0801af
 int id sharedValueSet 0x7f0801b0
 int id sharedValueUnset 0x7f0801b1
@@ -3638,6 +3651,7 @@ int id startToEnd 0x7f0801cd
 int id startVertical 0x7f0801ce
 int id staticLayout 0x7f0801cf
 int id staticPostLayout 0x7f0801d0
+int id statusText 0x7f080234
 int id stop 0x7f0801d1
 int id stretch 0x7f0801d2
 int id submenuarrow 0x7f0801d3
@@ -3700,6 +3714,7 @@ int id unlabeled 0x7f08020b
 int id up 0x7f08020c
 int id useLogo 0x7f08020d
 int id userEmailTextView 0x7f08020e
+int id validateButton 0x7f080235
 int id vertical_only 0x7f08020f
 int id view_offset_helper 0x7f080210
 int id view_transition 0x7f080211
@@ -3858,11 +3873,14 @@ int layout design_navigation_menu 0x7f0b002e
 int layout design_navigation_menu_item 0x7f0b002f
 int layout design_text_input_end_icon 0x7f0b0030
 int layout design_text_input_start_icon 0x7f0b0031
+int layout dialog_report_details 0x7f0b0074
+int layout fragment_admin 0x7f0b0075
 int layout fragment_home 0x7f0b0032
 int layout fragment_map 0x7f0b0033
 int layout fragment_report 0x7f0b0034
 int layout ime_base_split_test_activity 0x7f0b0035
 int layout ime_secondary_split_test_activity 0x7f0b0036
+int layout item_report 0x7f0b0076
 int layout m3_alert_dialog 0x7f0b0037
 int layout m3_alert_dialog_actions 0x7f0b0038
 int layout m3_alert_dialog_title 0x7f0b0039
@@ -3924,6 +3942,7 @@ int layout select_dialog_item_material 0x7f0b0070
 int layout select_dialog_multichoice_material 0x7f0b0071
 int layout select_dialog_singlechoice_material 0x7f0b0072
 int layout support_simple_spinner_dropdown_item 0x7f0b0073
+int menu bottom_nav_menu 0x7f0d0001
 int menu bottom_navigation_menu 0x7f0d0000
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001

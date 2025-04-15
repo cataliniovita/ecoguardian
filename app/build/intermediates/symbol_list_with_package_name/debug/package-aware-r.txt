@@ -3076,6 +3076,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_admin
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3245,9 +3246,9 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addPhotoButton
 id adjust_height
 id adjust_width
+id adminTitle
 id alertTitle
 id aligned
 id all
@@ -3272,7 +3273,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
-id bottomNavigationView
+id bottom_navigation
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3326,6 +3327,7 @@ id custom
 id customPanel
 id cut
 id dark
+id dateText
 id date_picker_actions
 id debugTextView
 id decelerate
@@ -3334,7 +3336,8 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
-id descriptionEditText
+id descriptionInput
+id descriptionText
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3368,6 +3371,7 @@ id elastic
 id emailEditText
 id emailLayout
 id embed
+id emptyStateText
 id end
 id endToStart
 id enterAlways
@@ -3390,12 +3394,13 @@ id fixed
 id flip
 id floating
 id forever
-id fragmentContainer
+id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3418,7 +3423,6 @@ id ignore
 id ignoreRequest
 id image
 id imageContainer
-id imagePreview
 id immediateStop
 id included
 id indeterminate
@@ -3441,12 +3445,15 @@ id linear
 id listMode
 id list_item
 id locationCard
-id locationInput
+id locationText
 id locationTextView
 id loginButton
 id loginTextView
 id logoImageView
 id m3_side_sheet
+id manageReportsButton
+id manageSettingsButton
+id manageUsersButton
 id map
 id marquee
 id masked
@@ -3507,6 +3514,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id navigation_admin
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3574,7 +3582,10 @@ id rectangles
 id refreshButton
 id registerButton
 id registerTextView
+id rejectButton
+id reportImage
 id report_drawn
+id reportsRecyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3603,8 +3614,10 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectImageButton
 id select_dialog_listview
 id selected
+id selectedImage
 id selection_type
 id sharedValueSet
 id sharedValueUnset
@@ -3639,6 +3652,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id statusText
 id stop
 id stretch
 id submenuarrow
@@ -3701,6 +3715,7 @@ id unlabeled
 id up
 id useLogo
 id userEmailTextView
+id validateButton
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3859,11 +3874,14 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_report_details
+layout fragment_admin
 layout fragment_home
 layout fragment_map
 layout fragment_report
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_report
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3925,6 +3943,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu bottom_nav_menu
 menu bottom_navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

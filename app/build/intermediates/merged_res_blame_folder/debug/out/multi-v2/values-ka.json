@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.helloworld.app-mergeDebugResources-35:/values-ka/values-ka.xml",
+            "outputFile": "com.example.helloworld.app-mergeDebugResources-36:/values-ka/values-ka.xml",
             "map": [
                 {
                     "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/f2a8029adeb8e47807d5439c876198c3/transformed/jetified-play-services-base-18.1.0/res/values-ka/values.xml",

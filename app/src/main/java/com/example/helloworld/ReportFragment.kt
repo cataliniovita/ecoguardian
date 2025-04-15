@@ -41,20 +41,14 @@ import com.google.firebase.storage.FirebaseStorage
 import java.io.ByteArrayOutputStream
 import java.util.*
 
-class ReportFragment : Fragment(), OnMapReadyCallback {
+class ReportFragment : Fragment() {
 
     private var _binding: FragmentReportBinding? = null
     private val binding get() = _binding!!
-    private lateinit var map: GoogleMap
-    private lateinit var fusedLocationClient: FusedLocationProviderClient
-    private lateinit var locationTextView: TextView
-    private lateinit var descriptionEditText: TextInputEditText
-    private lateinit var addPhotoButton: MaterialButton
-    private lateinit var submitButton: Button
-    private lateinit var imageContainer: LinearLayout
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
     private lateinit var storage: FirebaseStorage
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
     
     private val LOCATION_PERMISSION_REQUEST_CODE = 1001
     private val CAMERA_PERMISSION_REQUEST_CODE = 1002
@@ -62,11 +56,6 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
     
     private var currentLocation: LatLng? = null
     private val selectedImages = mutableListOf<Bitmap>()
-
-    private lateinit var titleInput: TextInputEditText
-    private lateinit var locationInput: TextInputEditText
-    private lateinit var categoryInput: AutoCompleteTextView
-
     private var selectedImageUri: Uri? = null
 
     private val requestPermissionLauncher = registerForActivityResult(
@@ -83,8 +72,8 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
         if (result.resultCode == Activity.RESULT_OK) {
             result.data?.data?.let { uri ->
                 selectedImageUri = uri
-                binding.imagePreview.setImageURI(uri)
-                binding.imagePreview.visibility = View.VISIBLE
+                binding.selectedImage.setImageURI(uri)
+                binding.selectedImage.visibility = View.VISIBLE
             }
         }
     }
@@ -106,38 +95,19 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
         firestore = FirebaseFirestore.getInstance()
         storage = FirebaseStorage.getInstance()
 
-        // Initialize views
-        locationTextView = binding.locationTextView
-        descriptionEditText = binding.descriptionEditText
-        addPhotoButton = binding.addPhotoButton
-        submitButton = binding.submitButton
-        imageContainer = binding.imageContainer
-
-        titleInput = binding.titleInput
-        locationInput = binding.locationInput
-        categoryInput = binding.categoryInput
-
-        // Set up map
-        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
-        mapFragment.getMapAsync(this)
-
         // Initialize location services
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
 
         // Set up click listeners
-        addPhotoButton.setOnClickListener {
+        binding.selectImageButton.setOnClickListener {
             checkPermissionAndPickImage()
         }
 
-        submitButton.setOnClickListener {
+        binding.submitButton.setOnClickListener {
             submitReport()
         }
 
         setupCategoryDropdown()
-    }
-
-    override fun onMapReady(googleMap: GoogleMap) {
-        map = googleMap
         getCurrentLocation()
     }
 
@@ -151,18 +121,9 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
             fusedLocationClient.lastLocation
                 .addOnSuccessListener { location: Location? ->
                     if (location != null) {
-                        // Got location, update map
+                        // Got location, update location text
                         currentLocation = LatLng(location.latitude, location.longitude)
-                        map.clear()
-                        map.addMarker(
-                            MarkerOptions()
-                                .position(currentLocation!!)
-                                .title("Your Location")
-                        )
-                        map.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation!!, 15f))
-                        
-                        // Update location text
-                        locationTextView.text = "Lat: ${location.latitude}, Lng: ${location.longitude}"
+                        binding.locationTextView.text = "Lat: ${location.latitude}, Lng: ${location.longitude}"
                     } else {
                         // Location is null, show error
                         Toast.makeText(
@@ -225,12 +186,8 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
     }
 
     private fun openImagePicker() {
-        try {
-            val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-            pickImage.launch(intent)
-        } catch (e: Exception) {
-            Toast.makeText(context, "Error opening image picker: ${e.message}", Toast.LENGTH_SHORT).show()
-        }
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        pickImage.launch(intent)
     }
 
     private fun setupCategoryDropdown() {
@@ -243,7 +200,7 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
             "Other"
         )
         val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, categories)
-        categoryInput.setAdapter(adapter)
+        binding.categoryInput.setAdapter(adapter)
     }
 
     private fun submitReport() {
@@ -252,8 +209,8 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
             return
         }
         
-        val title = titleInput.text.toString().trim()
-        val description = descriptionEditText.text.toString().trim()
+        val title = binding.titleInput.text.toString().trim()
+        val description = binding.descriptionInput.text.toString().trim()
         if (title.isEmpty() || description.isEmpty()) {
             Toast.makeText(requireContext(), "Please provide a title and description", Toast.LENGTH_SHORT).show()
             return
@@ -265,13 +222,13 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
         }
         
         // Disable submit button to prevent multiple submissions
-        submitButton.isEnabled = false
+        binding.submitButton.isEnabled = false
         
         // Get current user
         val currentUser = auth.currentUser
         if (currentUser == null) {
             Toast.makeText(requireContext(), "You must be logged in to submit a report", Toast.LENGTH_SHORT).show()
-            submitButton.isEnabled = true
+            binding.submitButton.isEnabled = true
             return
         }
         
@@ -302,7 +259,7 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
                     }
                     .addOnFailureListener { e ->
                         Toast.makeText(requireContext(), "Failed to upload image: ${e.message}", Toast.LENGTH_SHORT).show()
-                        submitButton.isEnabled = true
+                        binding.submitButton.isEnabled = true
                     }
             }
         }
@@ -323,7 +280,7 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
                 }
                 .addOnFailureListener { e ->
                     Toast.makeText(requireContext(), "Failed to upload image: ${e.message}", Toast.LENGTH_SHORT).show()
-                    submitButton.isEnabled = true
+                    binding.submitButton.isEnabled = true
                 }
         }
     }
@@ -345,19 +302,19 @@ class ReportFragment : Fragment(), OnMapReadyCallback {
                 Toast.makeText(requireContext(), "Report submitted successfully", Toast.LENGTH_SHORT).show()
                 
                 // Clear form
-                titleInput.text?.clear()
-                descriptionEditText.text?.clear()
-                imageContainer.removeAllViews()
+                binding.titleInput.text?.clear()
+                binding.descriptionInput.text?.clear()
+                binding.imageContainer.removeAllViews()
                 selectedImages.clear()
                 selectedImageUri = null
-                binding.imagePreview.visibility = View.GONE
+                binding.selectedImage.visibility = View.GONE
                 
                 // Re-enable submit button
-                submitButton.isEnabled = true
+                binding.submitButton.isEnabled = true
             }
             .addOnFailureListener { e ->
                 Toast.makeText(requireContext(), "Failed to submit report: ${e.message}", Toast.LENGTH_SHORT).show()
-                submitButton.isEnabled = true
+                binding.submitButton.isEnabled = true
             }
     }
 

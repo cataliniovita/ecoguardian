@@ -26,7 +26,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final AppBarLayout appBarLayout;
 
   @NonNull
-  public final BottomNavigationView bottomNavigationView;
+  public final BottomNavigationView bottomNavigation;
 
   @NonNull
   public final FrameLayout fragmentContainer;
@@ -35,11 +35,11 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppBarLayout appBarLayout, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull AppBarLayout appBarLayout, @NonNull BottomNavigationView bottomNavigation,
       @NonNull FrameLayout fragmentContainer, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
-    this.bottomNavigationView = bottomNavigationView;
+    this.bottomNavigation = bottomNavigation;
     this.fragmentContainer = fragmentContainer;
     this.toolbar = toolbar;
   }
@@ -77,13 +77,13 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.bottomNavigationView;
-      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
-      if (bottomNavigationView == null) {
+      id = R.id.bottom_navigation;
+      BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigation == null) {
         break missingId;
       }
 
-      id = R.id.fragmentContainer;
+      id = R.id.fragment_container;
       FrameLayout fragmentContainer = ViewBindings.findChildViewById(rootView, id);
       if (fragmentContainer == null) {
         break missingId;
@@ -95,8 +95,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, appBarLayout,
-          bottomNavigationView, fragmentContainer, toolbar);
+      return new ActivityMainBinding((ConstraintLayout) rootView, appBarLayout, bottomNavigation,
+          fragmentContainer, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

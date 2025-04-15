@@ -1,34 +1,46 @@
 [
     {
-        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_home.xml",
-        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/fragment_home.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/activity_debug_firebase.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/activity_debug_firebase.xml"
     },
     {
-        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_debug_firebase.xml",
-        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_debug_firebase.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/fragment_home.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/fragment_home.xml"
     },
     {
-        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_report.xml",
-        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/fragment_report.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/item_report.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/item_report.xml"
     },
     {
-        "merged": "com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_report.xml",
-        "source": "com.example.helloworld.app-main-39:/layout/fragment_report.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/fragment_report.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/fragment_report.xml"
     },
     {
-        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/fragment_map.xml",
-        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/fragment_map.xml"
+        "merged": "com.example.helloworld.app-mergeDebugResources-37:/layout/fragment_report.xml",
+        "source": "com.example.helloworld.app-main-40:/layout/fragment_report.xml"
     },
     {
-        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_login.xml",
-        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_login.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/fragment_admin.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/fragment_admin.xml"
     },
     {
-        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_main.xml",
-        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_main.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/dialog_report_details.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/dialog_report_details.xml"
     },
     {
-        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-36:/layout/activity_register.xml",
-        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-39:/layout/activity_register.xml"
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/activity_login.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/activity_main.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/fragment_map.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/fragment_map.xml"
+    },
+    {
+        "merged": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-mergeDebugResources-37:/layout/activity_register.xml",
+        "source": "/Users/kesselbach/.gradle/daemon/8.9/com.example.helloworld.app-main-40:/layout/activity_register.xml"
     }
 ]

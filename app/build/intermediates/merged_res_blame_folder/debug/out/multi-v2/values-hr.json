@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.helloworld.app-mergeDebugResources-35:/values-hr/values-hr.xml",
+            "outputFile": "com.example.helloworld.app-mergeDebugResources-36:/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/e9120a7379179a1cdcd0a3ce2c9b9571/transformed/browser-1.4.0/res/values-hr/values-hr.xml",

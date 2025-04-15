@@ -2,45 +2,50 @@ package com.example.helloworld
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.location.Location
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.example.helloworld.databinding.FragmentMapBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.google.android.material.button.MaterialButton
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MapFragment : Fragment(), OnMapReadyCallback {
 
+    private var _binding: FragmentMapBinding? = null
+    private val binding get() = _binding!!
     private lateinit var map: GoogleMap
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    private lateinit var locationTextView: TextView
-    private lateinit var refreshButton: MaterialButton
+    private lateinit var firestore: FirebaseFirestore
+    
     private val LOCATION_PERMISSION_REQUEST_CODE = 1001
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_map, container, false)
+    ): View {
+        _binding = FragmentMapBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-        // Initialize views
-        locationTextView = view.findViewById(R.id.locationTextView)
-        refreshButton = view.findViewById(R.id.refreshButton)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Initialize Firebase services
+        firestore = FirebaseFirestore.getInstance()
 
         // Set up map
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
@@ -48,53 +53,44 @@ class MapFragment : Fragment(), OnMapReadyCallback {
 
         // Initialize location services
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
-
-        // Set up refresh button
-        refreshButton.setOnClickListener {
-            getCurrentLocation()
-        }
-
-        return view
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
-        getCurrentLocation()
-    }
-
-    private fun getCurrentLocation() {
-        if (ContextCompat.checkSelfPermission(
+        
+        if (ActivityCompat.checkSelfPermission(
                 requireContext(),
                 Manifest.permission.ACCESS_FINE_LOCATION
             ) == PackageManager.PERMISSION_GRANTED
         ) {
-            // Permission is already granted, get location
-            fusedLocationClient.lastLocation
-                .addOnSuccessListener { location: Location? ->
-                    if (location != null) {
-                        // Got location, update map
-                        val currentLatLng = LatLng(location.latitude, location.longitude)
-                        map.clear()
+            map.isMyLocationEnabled = true
+            
+            // Get current location
+            fusedLocationClient.lastLocation.addOnSuccessListener { location ->
+                location?.let {
+                    val currentLatLng = LatLng(it.latitude, it.longitude)
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 15f))
+                }
+            }
+            
+            // Load reports from Firestore
+            firestore.collection("reports")
+                .get()
+                .addOnSuccessListener { documents ->
+                    for (document in documents) {
+                        val report = document.toObject(Report::class.java)
+                        report.id = document.id
+                        
+                        // Add marker for each report
+                        val reportLocation = LatLng(report.latitude, report.longitude)
                         map.addMarker(
                             MarkerOptions()
-                                .position(currentLatLng)
-                                .title("Your Location")
+                                .position(reportLocation)
+                                .title(report.description)
                         )
-                        map.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 15f))
-                        
-                        // Update location text
-                        locationTextView.text = "Lat: ${location.latitude}, Lng: ${location.longitude}"
-                    } else {
-                        // Location is null, show error
-                        Toast.makeText(
-                            requireContext(),
-                            "Could not get location. Please try again.",
-                            Toast.LENGTH_SHORT
-                        ).show()
                     }
                 }
         } else {
-            // Permission is not granted, request it
             requestLocationPermission()
         }
     }
@@ -115,8 +111,14 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         when (requestCode) {
             LOCATION_PERMISSION_REQUEST_CODE -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Permission granted, get location
-                    getCurrentLocation()
+                    // Permission granted, update map
+                    map.isMyLocationEnabled = true
+                    fusedLocationClient.lastLocation.addOnSuccessListener { location ->
+                        location?.let {
+                            val currentLatLng = LatLng(it.latitude, it.longitude)
+                            map.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 15f))
+                        }
+                    }
                 } else {
                     // Permission denied, show message
                     Toast.makeText(
@@ -128,5 +130,10 @@ class MapFragment : Fragment(), OnMapReadyCallback {
                 return
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 } 

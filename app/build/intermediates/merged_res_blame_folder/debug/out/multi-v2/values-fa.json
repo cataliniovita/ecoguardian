@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.helloworld.app-mergeDebugResources-35:/values-fa/values-fa.xml",
+            "outputFile": "com.example.helloworld.app-mergeDebugResources-36:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "/Users/kesselbach/.gradle/caches/8.9/transforms/e9120a7379179a1cdcd0a3ce2c9b9571/transformed/browser-1.4.0/res/values-fa/values-fa.xml",

@@ -15,7 +15,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.helloworld.R;
-import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -26,25 +25,22 @@ public final class FragmentReportBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final MaterialButton addPhotoButton;
-
-  @NonNull
   public final AutoCompleteTextView categoryInput;
 
   @NonNull
-  public final TextInputEditText descriptionEditText;
+  public final TextInputEditText descriptionInput;
 
   @NonNull
   public final LinearLayout imageContainer;
 
   @NonNull
-  public final ImageView imagePreview;
-
-  @NonNull
-  public final TextInputEditText locationInput;
-
-  @NonNull
   public final TextView locationTextView;
+
+  @NonNull
+  public final Button selectImageButton;
+
+  @NonNull
+  public final ImageView selectedImage;
 
   @NonNull
   public final Button submitButton;
@@ -53,19 +49,17 @@ public final class FragmentReportBinding implements ViewBinding {
   public final TextInputEditText titleInput;
 
   private FragmentReportBinding(@NonNull ScrollView rootView,
-      @NonNull MaterialButton addPhotoButton, @NonNull AutoCompleteTextView categoryInput,
-      @NonNull TextInputEditText descriptionEditText, @NonNull LinearLayout imageContainer,
-      @NonNull ImageView imagePreview, @NonNull TextInputEditText locationInput,
-      @NonNull TextView locationTextView, @NonNull Button submitButton,
-      @NonNull TextInputEditText titleInput) {
+      @NonNull AutoCompleteTextView categoryInput, @NonNull TextInputEditText descriptionInput,
+      @NonNull LinearLayout imageContainer, @NonNull TextView locationTextView,
+      @NonNull Button selectImageButton, @NonNull ImageView selectedImage,
+      @NonNull Button submitButton, @NonNull TextInputEditText titleInput) {
     this.rootView = rootView;
-    this.addPhotoButton = addPhotoButton;
     this.categoryInput = categoryInput;
-    this.descriptionEditText = descriptionEditText;
+    this.descriptionInput = descriptionInput;
     this.imageContainer = imageContainer;
-    this.imagePreview = imagePreview;
-    this.locationInput = locationInput;
     this.locationTextView = locationTextView;
+    this.selectImageButton = selectImageButton;
+    this.selectedImage = selectedImage;
     this.submitButton = submitButton;
     this.titleInput = titleInput;
   }
@@ -97,21 +91,15 @@ public final class FragmentReportBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.addPhotoButton;
-      MaterialButton addPhotoButton = ViewBindings.findChildViewById(rootView, id);
-      if (addPhotoButton == null) {
-        break missingId;
-      }
-
       id = R.id.categoryInput;
       AutoCompleteTextView categoryInput = ViewBindings.findChildViewById(rootView, id);
       if (categoryInput == null) {
         break missingId;
       }
 
-      id = R.id.descriptionEditText;
-      TextInputEditText descriptionEditText = ViewBindings.findChildViewById(rootView, id);
-      if (descriptionEditText == null) {
+      id = R.id.descriptionInput;
+      TextInputEditText descriptionInput = ViewBindings.findChildViewById(rootView, id);
+      if (descriptionInput == null) {
         break missingId;
       }
 
@@ -121,21 +109,21 @@ public final class FragmentReportBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imagePreview;
-      ImageView imagePreview = ViewBindings.findChildViewById(rootView, id);
-      if (imagePreview == null) {
-        break missingId;
-      }
-
-      id = R.id.locationInput;
-      TextInputEditText locationInput = ViewBindings.findChildViewById(rootView, id);
-      if (locationInput == null) {
-        break missingId;
-      }
-
       id = R.id.locationTextView;
       TextView locationTextView = ViewBindings.findChildViewById(rootView, id);
       if (locationTextView == null) {
+        break missingId;
+      }
+
+      id = R.id.selectImageButton;
+      Button selectImageButton = ViewBindings.findChildViewById(rootView, id);
+      if (selectImageButton == null) {
+        break missingId;
+      }
+
+      id = R.id.selectedImage;
+      ImageView selectedImage = ViewBindings.findChildViewById(rootView, id);
+      if (selectedImage == null) {
         break missingId;
       }
 
@@ -151,9 +139,9 @@ public final class FragmentReportBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentReportBinding((ScrollView) rootView, addPhotoButton, categoryInput,
-          descriptionEditText, imageContainer, imagePreview, locationInput, locationTextView,
-          submitButton, titleInput);
+      return new FragmentReportBinding((ScrollView) rootView, categoryInput, descriptionInput,
+          imageContainer, locationTextView, selectImageButton, selectedImage, submitButton,
+          titleInput);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
